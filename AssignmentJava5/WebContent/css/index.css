@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	padding: 10px;
+	background: #f1f1f1;
+	width: 99.5% !important;
+	height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+	padding: 10px;
+	text-align: center;
+	background: white;
+	margin: 0 auto;
+	width: 100%;
+	margin-left: 0.3%;
+	margin-top: 55px;
+	z-index: 1;
+	height: auto;
+}
+
+.header h1 {
+	font-size: 50px;
+	z-index: 1;
+}
+/* Style the top navigation bar */
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+	margin: 0 auto;
+	width: 100%;
+	margin-left: 0.3%;
+}
+/* Style the topnav links */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+	background-color: red;
+	color: black;
+	border-bottom: 3px solid red;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+	float: left;
+	width: 75%;
+}
+/* Right column */
+.rightcolumn {
+	float: left;
+	width: 24%;
+	background-color: #f1f1f1;
+	padding-left: 0.5%;
+}
+/* Fake image */
+.fakeimg {
+	background-color: #aaa;
+	width: 100%;
+	padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 10px;
+}
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Footer */
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 10px;
+	width: 100%;
+	margin-left: 0.3%
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* Breadcrumb  */
+ul.breadcrumb {
+	padding: 10px 16px;
+	list-style: none;
+	background-color: #eee;
+}
+
+ul.breadcrumb li {
+	display: inline;
+	font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+	padding: 8px;
+	color: black;
+	content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+	color: #0275d8;
+	text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+	color: #01447e;
+	text-decoration: underline;
+}
+
+/* Slide Down a Bar on Scroll */
+/* Style the navbar */
+#navbarc1 {
+	/* Black background color */
+	position: fixed; /* Make it stick/fixed */
+	top: 0; /* Stay on top */
+	width: 98%; /* Full width */
+	transition: top 0.3s;
+	/* Transition effect when sliding down (and up) */
+	z-index: 100;
+}
+
+/* Style the navbar links */
+#navbarc1 a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 15px 5px 15px 5px;
+	text-decoration: none;
+	z-index: 100;
+}
+
+#navbarc1 a:hover {
+	color: blue;
+	z-index: 100;
+}
+
+/*  Scroll Back To Top Button*/
+/* #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+} */
+
+
+/* button Xóa qlnv*/
+#btnxoa a {
+  text-decoration: none;
+  color: white !important;
+  '
+}
+#btnxoa a:link {
+  text-decoration: none;
+  color: white !important;
+  '
+}
+
+#btnxoa a:visited {
+  text-decoration: none;
+}
+
+#btnxoa a:hover {
+  text-decoration: underline;
+}
+
+#btnxoa a:active {
+  text-decoration: underline;
+}
+/* marquee */
+.hmenu{
+    padding: 0px;
+    margin:2px ;
+    list-style:none ;
+    border-radius:3px;
+    box-shadow:0 0 2px gray;
+    min-height:150px;
+    width:21%;
+    float:left;
+    margin-top: 2px;
+    color: red;
+   
+     font-size: 15px;
+z-index: -1;
+background: linear-gradient(to left,green,brown);
+    background: -moz-linear-gradient(left,green,brown);
+    background: -webkit-linear-gradient(left,green,brown);
+    background: -o-linear-gradient(left,green,brown);
+} 
+
+.hmenu a{
+    background: url('../images/close.png') no-repeat 10px center;
+    display: block ;
+    border-bottom: 1px dotted orangered;
+    color: red ;
+    background-size: 30px 30px;
+    font-size: larger ;
+    text-decoration: none ;
+    padding: 8px 5px 8px 60px; 
+} 
+.hmenu a:hover{
+    background: url('../images/open.png') no-repeat 10px center;  
+    border-bottom: 1px dotted white;
+    
+    color: black ;
+  
+    
+    background-size: 30px 30px;
+} 
+
+
+
+
+

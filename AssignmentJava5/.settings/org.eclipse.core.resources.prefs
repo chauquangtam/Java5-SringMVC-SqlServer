@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/views/templates/nav.jsp=UTF-8
+encoding//i18n-res/global_vi.properties=UTF-8
+encoding//i18n-res/home.index_vi.properties=UTF-8
+encoding//i18n-res/home.qlnv.addqlnv.properties=UTF-8
+encoding//i18n-res/home.qlnv.addqlnv_vi.properties=UTF-8
+encoding//i18n-res/home.qlnv.properties=UTF-8
+encoding//i18n-res/home.qlnv_vi.properties=UTF-8
+encoding//src/poly/controller/RecordController.java=UTF-8
+encoding//src/poly/controller/StaffController.java=UTF-8
+encoding//src/poly/entity/Staff.java=UTF-8
